@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">All About Friends</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="abt_my_friend">About My Friend</string>
+    <string name="more_photos">More Photos</string>
+    <string name="simple_card">simple_card</string>
+</resources>

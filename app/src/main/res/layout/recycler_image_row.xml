@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFriendActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_loc" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_card"
+        android:divider="@drawable/divider_list"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        android:showDividers="middle">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_left"
+                android:layout_toLeftOf="@+id/imageLocation"
+                android:text="@string/abt_my_friend" />
+
+            <ImageView
+                android:id="@+id/imageLocation"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/location_icon" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_ht"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/textMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:layout_toRightOf="@+id/image"
+            android:maxLines="5"
+            android:text="@string/more_photos"
+            android:textColor="@color/app_dark" />
+    </LinearLayout>
+
+
+</RelativeLayout>
